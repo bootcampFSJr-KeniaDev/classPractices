@@ -1,0 +1,19 @@
+.contenedor-principal{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.contenedor-principal2{
+    display: flex;
+    justify-content: space-around;
+}
+
+article{
+    background-color: brown;
+    width: 200px;
+    height: 200px;
+    margin: 10px 5px;
+}
+
+/** display: flex; (cajas van a ser flexibles) */

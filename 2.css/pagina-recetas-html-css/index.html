@@ -1,0 +1,88 @@
+<!-- el index representa la pagina principal (es lo que busca el navegador al principio) -->
+<!-- representa el tipo de documento -->
+<!DOCTYPE html>
+<html lang="en">
+    <!-- encabezado que muestra informacion al navegador -->
+    <head>
+        <!-- la pagina acepta cualquier caracter -->
+        <meta charset="UTF-8">
+        <!-- la pagina va ser responsive -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta author="Kenia Paiz">
+        <link rel="stylesheet" href="./assets/css/recipe.css">
+        <title>Web Recetas</title>
+        <!-- podemos incluir archivos (iconos, css, js) -->
+    </head>
+    <!-- todo lo que va visualizar el usuario -->
+    <body>
+        <!-- contenedor principal -->
+        <main class="container">
+            <figure>
+                <img src="https://res.cloudinary.com/dmddi5ncx/image/upload/v1728854675/practicas/image-omelette_tkehzt.jpg" alt="omelette">
+            </figure>
+
+            <h1 class="title">Simple Omelette Recipe</h1>
+            <p class="paragrahp">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore doloremque blanditiis reiciendis quae perspiciatis mollitia?</p>
+
+            <!--apartado de "tiempo de preparacion"  -->
+            <section class="preparation-time">
+                <h3>Preparation time</h3>
+                <!-- listas: listas ordenadas <ol> & desordenadas <ul> -->
+                <ul>
+                    <li><strong>Total:</strong> Approximentl 10 minutes</li>
+                    <li><strong>Preparatin:</strong> 5 minute</li>
+                    <li><strong>Cooking:</strong> 5 minutes</li>
+                </ul>
+            </section>
+
+            <section class="container-ingredients">
+                <h3 class="subtitle">Ingredients</h3>
+                <!-- listas: listas ordenadas <ol> & desordenadas <ul> -->
+                <ul>
+                    <li>2-3 eggs</li>
+                    <li>salt, to taste</li>
+                    <li>pepper, to taste</li>
+                </ul>
+            </section>
+            <hr>
+            <section class="container-instructions">
+                <h3 class="subtitle">Instructions</h3>
+                <ol>
+                    <li><strong>Bea the eggs: </strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, quibusdam!</li>
+                    <li><strong>Bea the eggs: </strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, quibusdam!</li>
+                    <li><strong>Bea the eggs: </strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, quibusdam!</li>
+                    <li><strong>Bea the eggs: </strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, quibusdam!</li>
+                    <li><strong>Bea the eggs: </strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, quibusdam!</li>
+                    <li><strong>Bea the eggs: </strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, quibusdam!</li>
+                </ol>
+            </section>
+            <hr>
+            <!-- caja general -->
+            <div class="container-nutrition">
+                <h3 class="subtitle">Nutrition</h3>
+                <!-- caja para formularios -->
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Calories</td>
+                            <td>277Kcal</td>
+                        </tr>
+                        <tr>
+                            <td>Carbs</td>
+                            <td>0g</td>
+                        </tr>
+                        <tr>
+                            <td>Protein</td>
+                            <td>20g</td>
+                        </tr>
+                        <tr>
+                            <td>Fat</td>
+                            <td>22g</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </body>
+</html>
+

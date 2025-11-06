@@ -1,0 +1,34 @@
+.testimonials {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+}
+
+.testimonial {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f4f4f4;
+}
+
+/* Ubicación específica de cada testimonio */
+.testimonial-1 {
+    grid-column: span 2;
+}
+
+.testimonial-2 {
+    grid-column: span 1;
+}
+
+.testimonial-3 {
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+.testimonial-4 {
+    grid-column: span 2;
+}
+
+.testimonial-5 {
+    grid-column: span 1;
+}

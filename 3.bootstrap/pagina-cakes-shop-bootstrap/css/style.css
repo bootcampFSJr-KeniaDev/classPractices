@@ -1,0 +1,97 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Galada&display=swap');
+
+body{
+    background-color: #EBEBEB;
+    position: relative;
+}
+.container{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.main{
+    background-color: white;
+    box-shadow: 0 0 4px rgba(0, 0, 50, .3);
+    position: relative;
+}
+
+/** Imagen del Nav */
+.icon{
+    width: 40px;
+    height: 40px;
+}
+
+/** banner */
+.banner{
+    height: 200px;
+    background-image: url("../images/bethany-fullsize.jpg");
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+    background-position: center 0px;
+}
+
+.logo{
+    width: 250px;
+    height: 250px;
+}
+
+/** Pagina FruitPies */
+.sub-title{
+    background-image: url("../images/pattern.png");
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+    background-position: center 0px;
+}
+
+.sub-title{
+    background-color: #4ECFA8;
+}
+
+.sub-title > h1{
+    color: #fff;
+    font-family: 'Galada', cursive;
+    font-size: 4rem;
+    margin: 0;
+}
+
+/** Carrousel - PieFruit */
+.carousel-caption{
+    background-color: rgba(0, 0, 0, .6);
+    border-radius: 25px;
+}
+
+.thumbnail{
+    width: auto;
+    height: 100px;
+    cursor: pointer;
+}
+
+.title{
+    font-family: 'Galada', cursive;
+    font-size: 2rem;
+    color: #434343;
+}
+
+.thumb{
+    width: auto;
+    height: 100px;
+}
+
+.footer > p{
+    margin: 0;
+    font-size: .7rem;
+}
+
+.toast{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/* Medium devices (desktops,  and up) */
+@media (min-width: 992px) {
+    .banner{
+        height: 600px;
+    }
+}

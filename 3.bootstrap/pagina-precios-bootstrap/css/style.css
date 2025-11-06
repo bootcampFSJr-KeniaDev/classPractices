@@ -1,0 +1,29 @@
+
+/** pseudoclase donde colocamos nuestros elementos claves para los estilos css */
+:root{
+    --color-primario: #2bb3b1;
+    --color-secundario: #bfdf32;
+    --color-terciario: #4abebd;
+    --color-white: #fff;
+}
+
+.title-principal{
+    color: var(--color-primario);
+}
+
+.subtitle{
+    color: var(--color-secundario);
+}
+
+.article-1{
+    background-color: var(--color-primario);
+}
+
+.article-1 button{
+    background-color: var(--color-secundario);
+    color: var(--color-white)
+}
+
+.article-2{
+    background-color: var(--color-terciario);
+}

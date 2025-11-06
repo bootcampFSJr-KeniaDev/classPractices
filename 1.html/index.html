@@ -1,0 +1,70 @@
+<!--  Tipo de documento -->
+<!DOCTYPE html>
+<!-- especificamos el idioma -->
+<html lang="en">
+    <!-- encabezado principal para el navegador -->
+    <head>
+        <!-- los metatados, es informacion para el navegador, por ejemplo aceptamos caracteres especiales  -->
+        <meta charset="UTF-8">
+        <!-- le otorgamos mas informacion al usuario al hacer una busqueda -->
+        <meta name="description" content="Pagina web basica de ejemplo">
+        <!-- el robot del navegador se va permitir buscar  -->
+        <meta name="robots" content="index, follow">
+        <!-- indicamos que la pagina web va ser responsive -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Semantica HTML</title>
+    </head>
+    <body>
+        <!-- tenemos etiqueta de apertura/cierre porque llevan contenido -->
+
+        <!-- creando la anatomia de la pagina web -->
+        <header>
+            <nav></nav>
+        </header>
+        <!-- contenido principal -->
+        <main>
+            <!-- section lo utilizamos para agrupar contenido -->
+            <section>
+                <!-- articulo que muestra un contenido independiente -->
+                <article>
+                    <h1>HTML5</h1>
+                    <!-- hipervinculo -->
+                    <a href="#">Soy un link basico</a>
+                </article>
+                <article>
+                    <h1>CSS</h1>
+                </article>
+            </section>
+            <!-- podemos utilizar un comodin -->
+            <div>
+                <h2>Listas ordenadas y desordenadas</h2>
+                <ul>
+                    <li>Frameworks</li>
+                    <li>Librerias</li>
+                    <li>Plugins</li>
+                </ul>
+
+                <ol>
+                    <li>Etiquetas HTML</li>
+                    <li>CSS basico</li>
+                    <li>Bootstrap</li>
+                </ol>
+            </div>
+
+            <section>
+                <h2>Recurso de imagenes</h2>
+                <figure>
+                    <img src="https://res.cloudinary.com/dmddi5ncx/image/upload/v1701790583/cld-sample-4.jpg" alt="comida" width="50%">
+                    <figcaption>Cena - Nutricion</figcaption>
+                </figure>
+            </section>
+            <section>
+                <h2>Videos...</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/dx3C3Kek5gY?si=GJ9ncGhROUfPjfUk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </section>
+        </main>
+        <footer>
+
+        </footer>
+    </body>
+</html>

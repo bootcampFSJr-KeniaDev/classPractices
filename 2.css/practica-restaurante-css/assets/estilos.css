@@ -1,0 +1,399 @@
+/**
+
+selectores
+- etiqueta html (body, section, img...)
+
+- clase (.) (podes reutilizar)
+- id (#) (unico)
+
+
+.encabezado{
+    background-color: burlywood;
+}
+
+#nosotros{
+    background-color: cadetblue;
+}
+ */
+
+*{
+    margin: 0;
+    padding: 0;
+    /** propiedad para manejar el control de las cajas */
+    box-sizing: border-box;
+}
+
+nav{
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.65);
+    position: fixed; /* Hace que el nav sea fijo */
+    top: 0; /* Lo fija en la parte superior */
+    width: 100%; /* Hace que el nav ocupe todo el ancho */
+    z-index: 1000; /* Ajusta el índice z para que esté por encima de otros elementos */
+    padding: 10px;
+}
+
+/** alineando los elementos del nav */
+nav ul li{
+    display: inline-block; /** pone los li en linea (horizontal) */
+    list-style: none;
+    margin: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: #99460e;
+    font-weight: bold;
+}
+
+.encabezado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./img/image1.jpg);
+    height: 600px;
+    width: 100%;
+    /** agregando estilo a que la imagen se adapte a su contenedor */
+    background-size: cover;
+    background-position: bottom;
+    /** ruta de recorte */
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%); /** top, left, rigth, bottom */
+    flex-flow: column nowrap;
+}
+
+.titulo{
+    color: #FFF;
+    font-size: 4rem; /*64px*/
+    /** opacidad de la letra */
+    font-weight: bold;
+    /** espacio entre caracteres */
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.subtitulo{
+    color: #FFF;
+    font-size: 2rem;
+    text-align: center;
+    letter-spacing: 0.7rem;
+    font-weight: 400;
+}
+
+section{
+    /** padding: top, bottom 100 */
+    padding: 100px 0;
+}
+
+.caja{
+    width: 80%;
+    margin: auto;
+}
+
+#nosotros{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-flow: row wrap;
+}
+
+.contenido_imagen{
+    position: relative;
+    flex: 0 0 400px;
+}
+
+.contenido_imagen img{
+    width: 100%;
+    height: 310px;
+    /** manipulando la resolucion de la imagen */
+    object-fit: cover;
+    /** background-size: cover */
+    /** asignacion de sombra
+        top, left, rigth, bottom
+     */
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
+    transition: all .5s;
+}
+
+.contenido_imagen img:hover{
+    transform: scale(1.1);
+}
+
+#nosotros .contenido{
+    flex: 0 0 50%;
+}
+
+h2{
+    margin-bottom: 70px;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: #222;
+    text-align: center;
+}
+
+h4{
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: #444;
+    font-weight: 400;
+}
+
+span{
+    color: #FF7B00;
+}
+
+.parrafo-nosotros{
+    /** espacio entre lineas */
+    line-height: 40px;
+    color: #666666;
+}
+
+/** apartado de ofertas */
+.ofertas{
+    position: relative;
+    background-image: url(./img/image3.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+
+.btn{
+    width: 170px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 25px;
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+    /** asignando el cursor de la manita */
+    cursor: pointer;
+}
+
+.btn-oferta{
+    background-color: #FF7B00;
+    color: #FFF;
+}
+
+.btn-oferta:hover{
+    background-color: #cf9259;
+}
+
+/** apartado de menu de hamburguesas **/
+.menu-hamburguesas{
+    display: flex;
+    justify-content: space-between; /* space-around, space-evenly */
+    align-items: center;
+    flex-flow: row wrap;
+    /** 
+        row: izquierda a derecha
+
+        nowrap: genera una sola linea
+
+        wrap: genera varias lineas en base a su contenedor
+    */
+}
+
+.tarjeta{
+    width: 30%;
+    height: 300px;
+    box-shadow: 0 0 10px 5px rgba(0,0,0,0.5);
+    margin-bottom: 30px;
+    background-size: cover !important;
+    background-position: center !important;
+    text-align: center;
+}
+
+/** nth-child(): hace referencia   (pseudo-clase) */
+
+.tarjeta:nth-child(1){
+    background-image: url(./img/product1.jpg);
+}
+
+.tarjeta:nth-child(2){
+    background-image: url(./img/product2.jpg);
+}
+
+.tarjeta:nth-child(3){
+    background-image: url(./img/product3.jpg);
+}
+
+.tarjeta:nth-child(4){
+    background-image: url(./img/product4.jpg);
+}
+
+.tarjeta:nth-child(5){
+    background-image: url(./img/product5.jpg);
+}
+
+.tarjeta:nth-child(6){
+    background-image: url(./img/product6.jpg);
+}
+
+.tarjeta-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    opacity: 0;
+    transition: all .5s;
+}
+
+.tarjeta:hover .tarjeta-container{
+    opacity: 1; 
+}
+
+h5{
+    font-size: 2.3rem;
+    font-weight: 400;
+    padding: 10px 0 0 0;
+    color: #ff7b00;
+}
+
+.btn-tarjeta{
+    background-color: #AB561D;
+    color: #FFF;
+    transition: all .5s;
+}
+
+.btn-tarjeta:hover{
+    transform: scale(1.1);
+}
+
+/** Pie de pagina */
+footer{
+    background-color: #222222;
+    padding: 5px;
+}
+
+.footer-contenido{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 20px; /* representa el espacio entre el contenido de las cajitas */
+}
+
+p{
+    color: white;
+}
+
+.footer-parrafo{
+    line-height: 40px;
+}
+
+.iconos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row nowrap;
+    width: 60%;
+}
+
+.iconos a{
+    background-color: #ff7b00;
+    border-radius: 50%;
+    margin: 5px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    transition: all 0.5s;
+}
+
+.iconos a:hover{
+    background-color: transparent;
+}
+
+/** texto- contacto */
+h3{
+    font-size: 2rem;
+    color: #FF7B00;
+    text-align: left;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 0.5rem;
+}
+
+/** UTILIZANDO PSEUDO-ELEMENT: BEFORE, AFTER */
+
+/** APARTADO DE MEDIA QUERIES */
+
+/** .overlay = es una clase de css que toma en cuenta una superposicion, donde ponemos los elementos encima de otro elemento */
+.overlay, .encabezado::before, .ofertas::before {
+    content: ''; /* aplicamos contenido */
+    position: absolute; /** top, bottom, left, rigth */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.encabezado *, .ofertas *{
+    position: relative;
+}
+
+/** dispositivos pequeños */
+@media (max-width:576px){
+    .titulo{
+        font-size: 3rem;
+    }
+
+    .footer-contenido{
+        grid-template-columns: 1fr;
+    }
+
+    .tarjeta{
+        width: 100%;
+    }
+}
+
+/** aplicando para pantallas pequeñas, tablet */
+@media (max-width: 968px){
+    #nosotros .contenido{
+        order: 1;
+        flex: 0 0 100%;
+        margin: 50px 0;
+    }
+
+    .contenido_imagen{
+        order: 0;
+        flex: 0 0 100%;
+    }
+
+    .iconos{
+        width: 100%;
+    }
+}
+
+
+/** SECCION DEL FORMULARIO **/
+.campo {
+    position:relative;
+    margin-bottom:40px;
+}
+
+input, textarea{
+    font-size:22px;
+    display:block;
+    width:100%;
+    height:100%;
+    padding:5px 10px;
+    border:1px solid #ac703d;
+    border-radius:0;
+    transition:border-color .25s ease, box-shadow .25s ease;
+    &:focus {
+		outline:0;
+		border-color:#ac5402;
+    }
+}
