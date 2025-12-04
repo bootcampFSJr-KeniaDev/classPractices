@@ -1,0 +1,21 @@
+.form{
+    text-align: center;
+}
+
+.input{
+    margin-bottom: .5rem;
+    width: 50%;
+}
+
+.btn{
+    background-color: #235252;
+    border: 1px solid #235252;
+    padding: .5rem;
+    color: #fff;
+}
+
+.input_error{
+    color: #850606;
+    line-height: 2;
+    font-weight: bold;
+}
