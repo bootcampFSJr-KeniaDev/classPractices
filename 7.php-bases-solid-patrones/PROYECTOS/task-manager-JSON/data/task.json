@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "title": "Estudiar ingles",
+        "description": "Hola.. ",
+        "date": "2025-02-17",
+        "status": "Pendiente",
+        "id_employee": 1
+    },
+    {
+        "id": 2,
+        "title": "Refactorizar codigo",
+        "description": "refactorizar las ventas",
+        "date": "2025-02-18",
+        "status": "Pendiente",
+        "id_employee": 2
+    },
+    {
+        "id": 3,
+        "title": "Testear codigo de reservaciones",
+        "description": "Los componentes de reservaciones debe ser testeado y revisado con documentaci\u00f3n",
+        "date": "2025-02-21",
+        "status": "Pendiente",
+        "id_employee": 3
+    },
+    {
+        "id": 4,
+        "title": "refactorizar kodigo",
+        "description": "holoooo",
+        "date": "2025-02-24",
+        "status": "Pendiente",
+        "id_employee": 2
+    },
+    {
+        "id": 45,
+        "title": "holiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii",
+        "description": "estoooooooooo yajam",
+        "date": "2025-02-26",
+        "status": "Pendiente",
+        "id_employee": 2
+    },
+    {
+        "id": 10,
+        "title": "oso",
+        "description": "canel y oso se aman",
+        "date": "2025-03-02",
+        "status": "Pendiente",
+        "id_employee": 4
+    }
+]
