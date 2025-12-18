@@ -1,0 +1,17 @@
+.title{
+    color: #8621d1;
+    font-style: italic;
+}
+
+.navbar{
+    background-color: #9a32eb !important;
+}
+
+.btn-patient{
+    background-color: #8621d1;
+    color: #fff;
+}
+
+.container-patient{
+    background-color: #5f9ea0;
+}
